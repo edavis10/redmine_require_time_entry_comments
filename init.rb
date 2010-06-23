@@ -8,3 +8,10 @@ Redmine::Plugin.register :redmine_require_time_entry_comments do
   author_url 'http://www.littlestreamsoftware.com'
   version '0.1.0'
 end
+
+require 'dispatcher'
+Dispatcher.to_prepare :redmine_require_time_entry_comments do
+
+  require_dependency 'time_entry'
+  TimeEntry.send(:include, RedmineRequireTimeEntryComments::Patches::TimeEntryPatch)
+end
