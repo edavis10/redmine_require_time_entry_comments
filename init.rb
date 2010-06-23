@@ -1,10 +1,10 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_require_time_entry_comments do
-  name 'Redmine Require Time Entry Comments plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  name 'Require Time Entry Comments'
+  author 'Eric Davis'
+  description 'Require Time Entry Comments is a plugin to require adding comments to Time Entries.'
+  url 'https://projects.littlestreamsoftware.com/projects/redmine-misc'
+  author_url 'http://www.littlestreamsoftware.com'
+  version '0.1.0'
 end
